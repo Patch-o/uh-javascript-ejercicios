@@ -1,0 +1,13 @@
+body {
+    display: flex;  
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-evenly;
+    background-image: url(https://www.gratistodo.com/wp-content/uploads/2021/12/Gifs-Goku-23.gif);
+}
+.planeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<title>Video</title>
+</head>
+<body>
+ 
+<div class="modal fade" id="ventana">
+    <div class="modal-dialog">
+        <video id="video" controls autoplay>
+            <source src="https://www.youtube.com/watch?v=9DQcTibnhRY&list=RD9DQcTibnhRY&start_radio=1" >
+        </video>     
+    </div>
+</div>
+ 
+<script type="text/javascript">
+$(window).load(function() {
+    $('#ventana').modal('show');
+});
+$("#video").bind("ended", function() {
+    $('#ventana').modal('toggle');
+});
+</script>
+ 
+</body>
+</html>

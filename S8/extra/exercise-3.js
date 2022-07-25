@@ -13,6 +13,7 @@ async function getOrders() {
 async function getProduct(id) {
     const resProduct = await fetch("http://localhost:3000/products/" + id);
     return await resProduct.json();
+    console.log(resPRoduct);
 }
 
 function sortByDate(array) {
@@ -27,7 +28,9 @@ async function completeProductsInfo(orders) {
             const resProduct = await fetch("http://localhost:3000/products/" + product.productId);
             const productDetail = await resProduct.json();
             order.products[index] = {...product, ...productDetail};
+            console.log(order.products[index]);
         }
+
         printOrder(order)
         
         // CON PROMESAS

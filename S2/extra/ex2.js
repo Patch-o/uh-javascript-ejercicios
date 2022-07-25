@@ -32,14 +32,14 @@ const users = [
       }
   },
 ]
-let x =0;
+let x =0;//1contador
 
 let media = 0 ;
 for (const user of users) {
   for (const key in user.favoritesSounds) {
      const sound = user.favoritesSounds[key];
      media += sound.volume;
-        x++;
+        x++;//1contador que es para sacar el numero de usuarios
 
   }
   

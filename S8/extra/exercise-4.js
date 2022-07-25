@@ -27,7 +27,7 @@ function getCharactersFilteredByPlanet(idPlanet){
     characters$$.innerHTML = '';
     fetch(baseUrl + "characters?idPlanet=" + idPlanet).then(res => res.json()).then(characters => {
         actualCharacters = characters;
-        createSearch()
+        createSearch()//para el input
         printCharacters(characters)
     })
 }

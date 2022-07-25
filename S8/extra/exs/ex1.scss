@@ -1,0 +1,36 @@
+@import "./animation.scss";
+body {    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(https://media4.giphy.com/media/3oFzmkkwfOGlzZ0gxi/200.gif);
+    background-size: 50%;
+    background-attachment: fixed;
+
+}
+div {
+    width: 20vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid greenyellow;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    &:hover {
+        animation: rotate-center  0.25s  linear;    }
+    
+}
+img{
+    display: flex;
+    object-fit: fill;
+    
+    
+   
+    left: 50%;
+    top:50%;
+    height: 28vh;
+    
+}

@@ -2,10 +2,13 @@
 //añade el evento click que ejecute un console log con la información 
 //del evento del click
 
-function botonClic (e) {
+const botonClic (e) => {
+    e = document.querySelector ('.btnToClick')
+    
+    
     console.log(e);
     
 }
 
 
-document.getElementsById('.btnToClick').addEventListener('click',botonClic);
+document.addEventListener('click',botonClic);

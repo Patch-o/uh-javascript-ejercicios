@@ -38,12 +38,15 @@ const favoritesSounds = [];
 
 for (const user of users) {
     for (const key in user.favoritesSounds) {
+        
         if (favoritesSounds.length) {
             let favoriteSoundIsInside = false;
             for (const favoriteSound of favoritesSounds) {
+               console.log(favoriteSound.name);
                 if(favoriteSound.name === key){
-                    favoriteSoundIsInside = true;
-                    favoriteSound.count++;
+
+                    favoriteSoundIsInside = true ;
+                    favoriteSound.count++ ;
                     break;
                 }
             }
@@ -57,4 +60,4 @@ for (const user of users) {
     }
 }
 
-console.log(favoritesSounds)
+//console.log(favoritesSounds)
